@@ -143,13 +143,13 @@ void Matriz::imprimeSpline() {
 
 void Matriz::acheY(double X, double index) {
     double termo1 = a[index],
-           termo2 = b[index]*(X -  x[index]),
-           termo3 = c[index]*(X -  x[index]),
-           termo4 = d[index]*(X -  x[index]);
+           termo2 = b[index]*(X -  x[index]);
+//           termo3 = c[index]*pow(X -  x[index], 2),
+//           termo4 = d[index]*pow(X -  x[index],3);
     
-    double resultado =  termo1 + termo2 + termo3 + termo4;
+//    double resultado =  termo1 + termo2 + termo3 + termo4;
     
-    cout << resultado << endl;
+//    cout << resultado << endl;
 }
 
 int Matriz::acheIndex(double X) {
